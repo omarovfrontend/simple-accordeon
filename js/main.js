@@ -1,5 +1,5 @@
-document.body.addEventListener('click', function(event) {
-    if (event.target.classList.contains('accordeon__btn')) {
-        event.target.classList.toggle('active');
+document.body.addEventListener('click', function({ target }) {
+    if (target.classList.contains('accordeon__btn')) {
+        target.classList.toggle('active');
     }
 });
