@@ -39,10 +39,11 @@ ul li {
     font-size: 15px;
     font-weight: 500;
     text-align: left;
-    padding: 10px 15px;
+    padding: 10px 40px 10px 15px;
     border-radius: 20px;
     cursor: pointer;
     border: none;
+    outline: none;
 }
 
 .accordeon__btn::before {
@@ -56,6 +57,10 @@ ul li {
     height: 12px;
 }
 
+.accordeon__btn.active::before {
+    background-image: url(./img/up_arrow.png);
+}
+
 .accordeon__item:nth-child(odd) .accordeon__btn {
     background-color: #696666;
     color: #fff;
@@ -66,10 +71,25 @@ ul li {
     color: #4f4f4f;
 }
 
+.accordeon__item .accordeon__btn.active {
+    background-color: #ff8663;
+    color: #fff;
+}
+
 .accordeon__list {
     padding: 10px 15px;
     color: #4f4f4f;
     font-weight: 300;
     line-height: 26px;
     display: none;
+}
+
+.accordeon__item .accordeon__btn.active + .accordeon__list {
+    display: block;
+}
+
+@media (max-width: 480px) {
+    .accordeon__item {
+        width: 100%;
+    }
 }
