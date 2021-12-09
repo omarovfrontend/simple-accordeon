@@ -1,6 +1,6 @@
 # simple-accordeon
 
 Задача:
-> Вёрстка простого макета + аккордеон.
+ - Вёрстка простого макета + аккордеон.
 
-Demo - https://omarovfrontend.github.io/simple-accordeon/
+> Demo - https://omarovfrontend.github.io/simple-accordeon/
